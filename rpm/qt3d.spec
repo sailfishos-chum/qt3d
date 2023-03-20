@@ -16,13 +16,10 @@ BuildRequires: make
 BuildRequires: opt-qt5-rpm-macros >= %{qt_version}
 BuildRequires: opt-qt5-qtbase-static >= %{qt_version}
 BuildRequires: opt-qt5-qtbase-private-devel
-%{?_qt5:Requires: %{_qt5}%{?_isa} = %{_qt5_version}}
+%{?_opt_qt5:Requires: %{_opt_qt5}%{?_isa} = %{_opt_qt5_version}}
 BuildRequires: opt-qt5-qtdeclarative-devel
 BuildRequires: opt-qt5-qtimageformats
 BuildRequires: opt-qt5-qtxmlpatterns-devel
-%if 0%{?fedora}
-BuildRequires: pkgconfig(assimp) >= 3.3.1
-%endif
 Requires: opt-qt5-qtimageformats%{?_isa} >= %{qt_version}
 
 %description
