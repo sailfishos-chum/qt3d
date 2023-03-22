@@ -29,7 +29,7 @@ support for 2D and 3D rendering in both Qt C++ and Qt Quick applications).
 %package devel
 Summary: Development files for %{name}
 Requires: %{name}%{?_isa} = %{version}-%{release}
-Requires: qt5-qtbase-devel%{?_isa}
+Requires: opt-qt5-qtbase-devel%{?_isa}
 %description devel
 %{summary}.
 
