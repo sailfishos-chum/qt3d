@@ -12,6 +12,8 @@ Url:     http://www.qt.io
 %global majmin %(echo %{version} | cut -d. -f1-2)
 Source0: %{name}-%{version}.tar.bz2
 
+%{?opt_qt5_default_filter}
+
 BuildRequires: make
 BuildRequires: opt-qt5-rpm-macros >= %{qt_version}
 BuildRequires: opt-qt5-qtbase-static >= %{qt_version}
@@ -21,6 +23,7 @@ BuildRequires: opt-qt5-qtdeclarative-devel
 BuildRequires: opt-qt5-qtimageformats
 BuildRequires: opt-qt5-qtxmlpatterns-devel
 Requires: opt-qt5-qtimageformats%{?_isa} >= %{qt_version}
+Requires: opt-qt5-qtdeclarative >= %{qt_version}
 
 %description
 Qt 3D provides functionality for near-realtime simulation systems with
