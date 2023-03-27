@@ -24,6 +24,7 @@ BuildRequires: opt-qt5-qtimageformats
 BuildRequires: opt-qt5-qtxmlpatterns-devel
 Requires: opt-qt5-qtimageformats%{?_isa} >= %{qt_version}
 Requires: opt-qt5-qtdeclarative >= %{qt_version}
+Requires: opt-qt5-qtbase-gui >= %{qt_version}
 
 %description
 Qt 3D provides functionality for near-realtime simulation systems with
