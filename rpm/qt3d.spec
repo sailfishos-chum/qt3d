@@ -1,8 +1,8 @@
-%global qt_version 5.15.8
+%global qt_version 5.15.9
 
 Summary: Qt5 - Qt3D QML bindings and C++ APIs
 Name:    opt-qt5-qt3d
-Version: 5.15.8
+Version: 5.15.9
 Release: 1%{?dist}
 
 # See LICENSE.GPL LICENSE.LGPL LGPL_EXCEPTION.txt, for details
